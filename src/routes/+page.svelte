@@ -20,6 +20,8 @@
 	};
 </script>
 
+<title>Mock your friends!</title>
+
 <div class="bg-slate-500 flex flex-col h-screen">
 	<p class="self-center font-bold text-slate-900">Enter text here!</p>
 	<textarea class="mx-9 h-56 font-bold" name="henlo" bind:value={text} id="henlo" />
