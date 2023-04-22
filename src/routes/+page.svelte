@@ -22,9 +22,20 @@
 
 <title>Mock your friends!</title>
 
-<div class="bg-slate-500 flex flex-col h-screen">
-	<p class="self-center font-bold text-slate-900">Enter text here!</p>
-	<textarea class="mx-9 h-56 font-bold" name="henlo" bind:value={text} id="henlo" />
-	<p class="self-center font-bold text-slate-900">See the output here</p>
-	<p class="mx-9 bg-white font-bold h-56">{mock(text)}</p>
+<div class="bg-slate-500 flex-col flex h-screen justify-between">
+	<div class="flex flex-col">
+		<textarea
+			class="m-9 h-56 font-bold outline-none text-slate-900 border-black border-2 rounded-xl text-center shadow-black shadow-sm"
+			placeholder="Enter text here!"
+			name="henlo"
+			bind:value={text}
+			id="henlo"
+		/>
+		<textarea
+			readonly
+			class="mx-9 h-56 font-bold outline-none border-black border-2 rounded-xl text-center text-slate-400 bg-slate-900 shadow-black shadow-sm"
+			placeholder="Get output here">{mock(text)}</textarea
+		>
+	</div>
+	<p class="text-center">It's just a joke 🥸</p>
 </div>
