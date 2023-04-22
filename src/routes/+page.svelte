@@ -18,6 +18,11 @@
 		}
 		return out;
 	};
+
+	const copy_to_clipboard = (text: string): null => {
+		navigator.clipboard.writeText(text);
+		return null;
+	};
 </script>
 
 <title>Mock your friends!</title>
@@ -36,6 +41,12 @@
 			class="mx-9 h-56 font-bold outline-none border-black border-2 rounded-xl text-center text-slate-400 bg-slate-900 shadow-black shadow-sm"
 			placeholder="Get output here">{mock(text)}</textarea
 		>
+		<p
+			class="text-center mt-2 mx-auto cursor-pointer active:text-slate-400"
+			on:click={copy_to_clipboard(mock(text))}
+		>
+			Click here to copy to clipboard
+		</p>
 	</div>
-	<p class="text-center">It's just a joke 🥸</p>
+	<p class="text-center hover:text-pink-600 mx-auto">It's just a joke 🥸</p>
 </div>
