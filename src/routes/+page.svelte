@@ -48,5 +48,5 @@
 			Click here to copy to clipboard
 		</p>
 	</div>
-	<p class="text-center hover:text-pink-600 mx-auto">It's just a joke 🥸</p>
+	<p class="text-center hover:text-green-600 mx-auto">It's just a joke 🥸</p>
 </div>
